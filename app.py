@@ -23,7 +23,7 @@ INCREMENT_EVENT = pygame.USEREVENT + 1
 pygame.time.set_timer(INCREMENT_EVENT, 5000)  # 5000 milliseconds = 5 seconds
 
 # Set up SQLite database
-conn = sqlite3.connect('counter.db')
+conn = sqlite3.connect('counter.db') # Connect to database
 c = conn.cursor()
 c.execute('''CREATE TABLE IF NOT EXISTS counter (value INTEGER)''')
 conn.commit()
