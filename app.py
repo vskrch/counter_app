@@ -20,7 +20,7 @@ counter = seed
 
 # Set up timer event
 INCREMENT_EVENT = pygame.USEREVENT + 1
-pygame.time.set_timer(INCREMENT_EVENT, 5000)  # 5000 milliseconds = 5 seconds
+pygame.time.set_timer(INCREMENT_EVENT, 2569)  # 3000 milliseconds = 3 seconds
 
 # Set up SQLite database
 conn = sqlite3.connect('counter.db') # Connect to database
